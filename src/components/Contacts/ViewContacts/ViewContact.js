@@ -3,7 +3,6 @@ import { EmailIcon, Icon, PhoneIcon } from "@chakra-ui/icons";
 import { Link, useParams } from "react-router-dom";
 import { ContactService } from "../../../Services/ContactService";
 import Spinner from "../../spinner/Spinner";
-import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
 
 const ViewContact = () => {
   let { contactId } = useParams();
@@ -21,7 +20,6 @@ const ViewContact = () => {
         const response = await ContactService.getContact(contactId);
         setState({ ...state, loading: false, contact: response.data });
         // console.log(response.data);
-
       } catch (e) {
         console.error(e);
         setState({ ...state, loading: false, errorMessage: e.data });
@@ -33,14 +31,15 @@ const ViewContact = () => {
 
   return (
     <>
-      <pre>{JSON.stringify(contact)}</pre>
       <section className="view-contact-intro mt-3">
         <div className="container">
           <div className="row">
             <div className="col">
               <h2 className="text-warning ">View Contact</h2>
               <p className="fst-italic">
-              This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers.
+                This is a software program that enables you to easily store and
+                find contact information, such as names, addresses, and Phone
+                numbers.
               </p>
             </div>
           </div>
@@ -50,7 +49,7 @@ const ViewContact = () => {
         <Spinner />
       ) : (
         <React.Fragment>
-          {Object.keys(contact).length> 0 && (        
+          {Object.keys(contact).length > 0 && (
             <section className="view-contact mt-3">
               <div className="container">
                 <div className=" row ">
@@ -66,9 +65,7 @@ const ViewContact = () => {
                       </li>
                       <li className="list-group-item list-group-item-action">
                         <EmailIcon></EmailIcon> :
-                        <span className="fw-bold p-3">
-                          {contact.email}
-                        </span>
+                        <span className="fw-bold p-3">{contact.email}</span>
                       </li>
                     </ul>
                   </div>
