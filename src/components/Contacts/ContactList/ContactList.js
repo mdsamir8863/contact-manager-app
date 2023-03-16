@@ -80,12 +80,7 @@ const ContactList = () => {
                   </Link>
                 </h2>
                 <p className="fst-italic">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nulla rerum nobis minus, voluptatibus eius autem commodi
-                  voluptatem mollitia ratione ipsam vero qui doloribus
-                  distinctio adipisci. voluptatem mollitia ratione ipsam vero
-                  qui doloribus distinctio adipisci. voluptatem mollitia ratione
-                  ipsam vero qui doloribus distinctio adipisci.
+                This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers. 
                 </p>
               </div>
             </div>
@@ -136,7 +131,7 @@ const ContactList = () => {
                           <div className="card mb-4">
                             <div className="card-body">
                               <div className="row align-items-center d-flex justify-content-around">
-                                <div className="container col-md-10">
+                                <div className="container">
                                   <ul className="list-group">
                                     <li className="list-group-item list-group-item-action">
                                       <div className="fa fa-user" /> :
@@ -158,7 +153,7 @@ const ContactList = () => {
                                     </li>
                                   </ul>
                                 </div>
-                                <div className="col-md-1 d-flex flex-column gap-1  align-items-center ">
+                                <div className=" d-flex align-items-center justify-content-evenly  mt-3">
                                   <Link
                                     to={`/contact/view/${contact.id}`}
                                     className="btn btn-warning"

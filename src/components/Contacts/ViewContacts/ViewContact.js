@@ -40,12 +40,7 @@ const ViewContact = () => {
             <div className="col">
               <h2 className="text-warning ">View Contact</h2>
               <p className="fst-italic">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Reprehenderit repellat fuga, quaerat excepturi odit ut odio
-                vitae harum, praesentium eligendi delectus aut. Soluta nostrum,
-                minus omnis magni rem eius delectus quibusdam sint nobis
-                nostrum, minus omnis magni rem eius delectus quibusdam sint
-                nobis.
+              This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers.
               </p>
             </div>
           </div>

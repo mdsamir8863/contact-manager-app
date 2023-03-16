@@ -1,26 +1,26 @@
 body {
     position: relative;
-    background-color: rgb(165, 163, 164);
 }
 
 .blur {
+    position: absolute;
     z-index: -1;
     height: 20rem;
     width: 20rem;
     background-color: aqua;
     border-radius: 50%;
-    position: absolute;
     filter: blur(200px);
     right: 3rem;
     top: 25rem;
 }
+
 .blur2 {
+    position: absolute;
     z-index: -1;
     height: 20rem;
     width: 20rem;
     background-color: aqua;
     border-radius: 50%;
-    position: absolute;
     filter: blur(300px);
     left: 3rem;
     top: 0rem;

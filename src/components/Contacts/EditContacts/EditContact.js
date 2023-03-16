@@ -69,11 +69,7 @@ const EditContact = () => {
                 <div className="col">
                   <h3 className="text-primary ">Edit Contact</h3>
                   <p className="fst-italic">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Perspiciatis aliquid reprehenderit minima dolores unde
-                    debitis quas sit vel eum, dolor molestias. Quam nobis
-                    necessitatibus architecto aliquam assumenda, veritatis quod
-                    dolorum quas a saepe!
+                  This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers.
                   </p>
                 </div>
               </div>
