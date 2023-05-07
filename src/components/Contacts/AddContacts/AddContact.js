@@ -11,6 +11,7 @@ const AddContact = () => {
       name: "",
       phone: "",
       email: "",
+      address: "",
     },
   });
 
@@ -47,7 +48,9 @@ const AddContact = () => {
             <div className="col">
               <h2 className="text-success ">Create Contact</h2>
               <p className="fst-italic">
-              This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers.
+                This is a software program that enables you to easily store and
+                find contact information, such as names, addresses, and Phone
+                numbers.
               </p>
             </div>
           </div>
@@ -73,7 +76,15 @@ const AddContact = () => {
                     placeholder="Mobile Number"
                     className="form-control"
                   />
-                  {/* <input type="file" placeholder="Photo" className="form-control"/> */}
+                  <input
+                    required={true}
+                    name="address"
+                    value={contact.address}
+                    onChange={UpdateInput}
+                    type="text"
+                    placeholder="Address"
+                    className="form-control"
+                  />
                   <input
                     required={true}
                     name="email"

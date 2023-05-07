@@ -80,7 +80,9 @@ const ContactList = () => {
                   </Link>
                 </h2>
                 <p className="fst-italic">
-                This is a software program that enables you to easily store and find contact information, such as names, addresses, and Phone numbers. 
+                  This is a software program that enables you to easily store
+                  and find contact information, such as names, addresses, and
+                  Phone numbers.
                 </p>
               </div>
             </div>
@@ -151,6 +153,12 @@ const ContactList = () => {
                                         {contact.email}
                                       </span>
                                     </li>
+                                    {/* <li className="list-group-item list-group-item-action">
+                                      <EmailIcon></EmailIcon> :
+                                      <span className="fw-bold p-3">
+                                        {contact.address}
+                                      </span>
+                                    </li> */}
                                   </ul>
                                 </div>
                                 <div className=" d-flex align-items-center justify-content-evenly  mt-3">
